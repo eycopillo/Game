@@ -36,6 +36,7 @@
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
             timer3 = new System.Windows.Forms.Timer(components);
+            Puntaje = new Label();
             ((System.ComponentModel.ISupportInitialize)TuboArriva).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Player).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Barrera).BeginInit();
@@ -54,7 +55,7 @@
             // Player
             // 
             Player.BackgroundImage = Properties.Resources.Bicho_1;
-            Player.Location = new Point(30, 129);
+            Player.Location = new Point(19, 225);
             Player.Name = "Player";
             Player.Size = new Size(65, 52);
             Player.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -98,12 +99,23 @@
             timer3.Enabled = true;
             timer3.Interval = 1;
             // 
+            // Puntaje
+            // 
+            Puntaje.AutoSize = true;
+            Puntaje.Location = new Point(52, 198);
+            Puntaje.Name = "Puntaje";
+            Puntaje.Size = new Size(22, 25);
+            Puntaje.TabIndex = 4;
+            Puntaje.Text = "0";
+            Puntaje.Click += label1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.descarga__3;
             ClientSize = new Size(286, 447);
+            Controls.Add(Puntaje);
             Controls.Add(TuvoAbajo);
             Controls.Add(Barrera);
             Controls.Add(Player);
@@ -128,5 +140,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
+        private Label Puntaje;
     }
 }

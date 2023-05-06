@@ -19,7 +19,7 @@ namespace Game
             Distancia = PosicionRandom.Next(-160, 118);
             TuboArriva.Location = new Point(270, -173 - Distancia);
             TuvoAbajo.Location = new Point(270, 319 - Distancia);
-
+            Puntaje.Text = "0";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -60,6 +60,14 @@ namespace Game
                 ly++;
             }
             Player.Location = new Point(Player.Location.X, ly);
+
+            if((Player.Bounds.IntersectsWith(Barrera.Bounds)) || (Player.Bounds.IntersectsWith(TuboArriva.Bounds)) || (Player.Bounds.IntersectsWith(TuvoAbajo.Bounds)))
+
+            {
+                IniciarJuego();
+            }
+            Puntaje.Location = new Point(Player.Location.X + 30, Player.Location.Y - 25);
+            Puntaje.Text = (TuboArriva.Location.X == Player.Location.X) ? Convert.ToString((Convert.ToInt32(Puntaje.Text) + 1)).ToString() : Puntaje.Text;
         }
 
         private void Player_Click(object sender, EventArgs e)
@@ -68,6 +76,11 @@ namespace Game
         }
 
         private void timer2_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
