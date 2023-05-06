@@ -53,10 +53,10 @@
             // 
             // Player
             // 
-            Player.BackgroundImage = Properties.Resources.Mob1;
-            Player.Location = new Point(12, 165);
+            Player.BackgroundImage = Properties.Resources.Bicho_1;
+            Player.Location = new Point(30, 129);
             Player.Name = "Player";
-            Player.Size = new Size(133, 103);
+            Player.Size = new Size(65, 52);
             Player.SizeMode = PictureBoxSizeMode.AutoSize;
             Player.TabIndex = 1;
             Player.TabStop = false;

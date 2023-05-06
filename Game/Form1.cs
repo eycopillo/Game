@@ -16,6 +16,10 @@ namespace Game
         public void IniciarJuego()
         {
             Player.Location = new Point(19, 225);
+            Distancia = PosicionRandom.Next(-160, 118);
+            TuboArriva.Location = new Point(270, -173 - Distancia);
+            TuvoAbajo.Location = new Point(270, 319 - Distancia);
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,12 +37,12 @@ namespace Game
             int CantidadMovimientos = 5;
             if (ContadorMovimientos <= CantidadMovimientos)
             {
-                Player.Image = Properties.Resources.Mob2;
+                Player.Image = Properties.Resources.Bicho_2;
                 ContadorMovimientos++;
             }
             if ((ContadorMovimientos > CantidadMovimientos / 2) && (ContadorMovimientos <= CantidadMovimientos * 2))
             {
-                Player.Image = Properties.Resources.Mob1;
+                Player.Image = Properties.Resources.Bicho_1;
                 ContadorMovimientos++;
             }
             ContadorMovimientos = (ContadorMovimientos > CantidadMovimientos * 2) ? 0 : ContadorMovimientos;
