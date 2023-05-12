@@ -61,7 +61,7 @@ namespace Game
             }
             Player.Location = new Point(Player.Location.X, ly);
 
-            if((Player.Bounds.IntersectsWith(Barrera.Bounds)) || (Player.Bounds.IntersectsWith(TuboArriva.Bounds)) || (Player.Bounds.IntersectsWith(TuvoAbajo.Bounds)))
+            if ((Player.Bounds.IntersectsWith(Barrera.Bounds)) || (Player.Bounds.IntersectsWith(TuboArriva.Bounds)) || (Player.Bounds.IntersectsWith(TuvoAbajo.Bounds)))
 
             {
                 IniciarJuego();
@@ -77,12 +77,37 @@ namespace Game
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+            // Para mover el tubo mientras sea mayor al limite del escenario    
+            if (TuvoAbajo.Location.X > -140)
+            {
+                TuvoAbajo.Location = new Point((TuvoAbajo.Location.X) - 1, TuvoAbajo.Location.Y);
+                TuboArriva.Location = new Point((TuboArriva.Location.X) - 1, TuboArriva.Location.Y);
+            }
 
+            else
+            {
+                Distancia = PosicionRandom.Next(-170, 118);
+                TuvoAbajo.Location = new Point(400, 319 + Distancia);
+                TuboArriva.Location = new Point(400, -173 + Distancia);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Space))
+            {
+                VolarArriva = true;
+            }
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            Barrera.Location = (Barrera.Location.X > -480) ? new Point((Barrera.Location.X) - 1, Barrera.Location.Y) : Barrera.Location = new Point(-9, Barrera.Location.Y);
         }
     }
 }

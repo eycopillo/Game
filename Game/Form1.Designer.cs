@@ -98,6 +98,7 @@
             // 
             timer3.Enabled = true;
             timer3.Interval = 1;
+            timer3.Tick += timer3_Tick;
             // 
             // Puntaje
             // 
@@ -123,6 +124,7 @@
             Name = "Form1";
             Text = "Juego";
             Load += Form1_Load;
+            KeyPress += Form1_KeyPress;
             ((System.ComponentModel.ISupportInitialize)TuboArriva).EndInit();
             ((System.ComponentModel.ISupportInitialize)Player).EndInit();
             ((System.ComponentModel.ISupportInitialize)Barrera).EndInit();
