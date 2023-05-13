@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            TuboArriva = new PictureBox();
             Player = new PictureBox();
             Barrera = new PictureBox();
             TuvoAbajo = new PictureBox();
@@ -37,20 +36,12 @@
             timer2 = new System.Windows.Forms.Timer(components);
             timer3 = new System.Windows.Forms.Timer(components);
             Puntaje = new Label();
-            ((System.ComponentModel.ISupportInitialize)TuboArriva).BeginInit();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)Player).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Barrera).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TuvoAbajo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // TuboArriva
-            // 
-            TuboArriva.BackgroundImage = Properties.Resources.Tubo_de_arriva;
-            TuboArriva.Location = new Point(220, 12);
-            TuboArriva.Name = "TuboArriva";
-            TuboArriva.Size = new Size(54, 159);
-            TuboArriva.TabIndex = 0;
-            TuboArriva.TabStop = false;
             // 
             // Player
             // 
@@ -111,32 +102,41 @@
             Puntaje.Text = "0";
             Puntaje.Click += label1_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.Tubo_de_arriva;
+            pictureBox1.Location = new Point(134, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(53, 153);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.descarga__3;
             ClientSize = new Size(286, 447);
+            Controls.Add(pictureBox1);
             Controls.Add(Puntaje);
             Controls.Add(TuvoAbajo);
             Controls.Add(Barrera);
             Controls.Add(Player);
-            Controls.Add(TuboArriva);
             Name = "Form1";
             Text = "Juego";
             Load += Form1_Load;
             KeyPress += Form1_KeyPress;
-            ((System.ComponentModel.ISupportInitialize)TuboArriva).EndInit();
             ((System.ComponentModel.ISupportInitialize)Player).EndInit();
             ((System.ComponentModel.ISupportInitialize)Barrera).EndInit();
             ((System.ComponentModel.ISupportInitialize)TuvoAbajo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox TuboArriva;
         private PictureBox Player;
         private PictureBox Barrera;
         private PictureBox TuvoAbajo;
@@ -144,5 +144,6 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
         private Label Puntaje;
+        private PictureBox pictureBox1;
     }
 }
