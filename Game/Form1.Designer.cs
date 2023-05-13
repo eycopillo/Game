@@ -54,7 +54,7 @@
             // 
             // Player
             // 
-            Player.BackgroundImage = Properties.Resources.Bicho_1;
+            Player.BackgroundImage = Properties.Resources.Bicho4;
             Player.Location = new Point(19, 225);
             Player.Name = "Player";
             Player.Size = new Size(65, 52);
@@ -65,10 +65,10 @@
             // 
             // Barrera
             // 
-            Barrera.BackgroundImage = Properties.Resources.vida;
-            Barrera.Location = new Point(-272, 416);
+            Barrera.BackgroundImage = Properties.Resources.barra1;
+            Barrera.Location = new Point(-264, 437);
             Barrera.Name = "Barrera";
-            Barrera.Size = new Size(562, 33);
+            Barrera.Size = new Size(562, 10);
             Barrera.TabIndex = 2;
             Barrera.TabStop = false;
             // 

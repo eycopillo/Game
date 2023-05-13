@@ -73,6 +73,16 @@ namespace Game.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap barra1 {
+            get {
+                object obj = ResourceManager.GetObject("barra1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bicho_1 {
             get {
                 object obj = ResourceManager.GetObject("Bicho 1", resourceCulture);
@@ -106,6 +116,26 @@ namespace Game.Properties {
         internal static System.Drawing.Bitmap bicho2 {
             get {
                 object obj = ResourceManager.GetObject("bicho2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bicho3 {
+            get {
+                object obj = ResourceManager.GetObject("Bicho3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bicho4 {
+            get {
+                object obj = ResourceManager.GetObject("Bicho4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
