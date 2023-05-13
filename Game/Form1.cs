@@ -50,6 +50,7 @@ namespace Game
             int ly = Player.Location.Y;
             int lx = Player.Location.X;
 
+            //Volar
             if (VolarArriva)
             {
                 ly = ly - 15;
