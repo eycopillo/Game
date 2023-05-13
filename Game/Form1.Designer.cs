@@ -104,7 +104,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.Tubo_de_arriva;
+            pictureBox1.BackgroundImage = Properties.Resources.Tubo_de_arriva1;
             pictureBox1.Location = new Point(134, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(53, 153);

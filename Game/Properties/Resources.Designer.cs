@@ -273,6 +273,16 @@ namespace Game.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tubo_de_arriva1 {
+            get {
+                object obj = ResourceManager.GetObject("Tubo de arriva1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vida {
             get {
                 object obj = ResourceManager.GetObject("vida", resourceCulture);
