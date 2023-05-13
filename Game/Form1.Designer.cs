@@ -71,6 +71,7 @@
             Barrera.Size = new Size(562, 10);
             Barrera.TabIndex = 2;
             Barrera.TabStop = false;
+            Barrera.Click += Barrera_Click;
             // 
             // TuvoAbajo
             // 

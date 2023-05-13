@@ -109,5 +109,10 @@ namespace Game
         {
             Barrera.Location = (Barrera.Location.X > -480) ? new Point((Barrera.Location.X) - 1, Barrera.Location.Y) : Barrera.Location = new Point(-9, Barrera.Location.Y);
         }
+
+        private void Barrera_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
