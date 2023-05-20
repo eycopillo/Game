@@ -21,7 +21,7 @@ namespace Game
             TuvoAbajo.Location = new Point(270, 319 - Distancia);
             Puntaje.Text = "0";
         }
-        // 
+        // asdfs
         private void Form1_Load(object sender, EventArgs e)
         {
 

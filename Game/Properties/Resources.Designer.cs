@@ -123,9 +123,29 @@ namespace Game.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bicho1r {
+            get {
+                object obj = ResourceManager.GetObject("bicho1r", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bicho2 {
             get {
                 object obj = ResourceManager.GetObject("bicho2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bicho2r {
+            get {
+                object obj = ResourceManager.GetObject("bicho2r", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

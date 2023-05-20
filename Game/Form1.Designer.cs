@@ -46,7 +46,7 @@
             // 
             // Player
             // 
-            Player.BackgroundImage = Properties.Resources.Bicho4;
+            Player.BackgroundImage = Properties.Resources.bicho2r;
             Player.Location = new Point(19, 225);
             Player.Name = "Player";
             Player.Size = new Size(65, 52);
