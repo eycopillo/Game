@@ -21,7 +21,7 @@ namespace Game
             TuvoAbajo.Location = new Point(270, 319 - Distancia);
             Puntaje.Text = "0";
         }
-        // lkdsa
+        // 
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -31,7 +31,7 @@ namespace Game
         {
 
         }
-
+        // Movimiento en el timer 1
         private void timer1_Tick(object sender, EventArgs e)
         {
             int CantidadMovimientos = 5;
