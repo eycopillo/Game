@@ -34,6 +34,7 @@ namespace Game
         // Movimiento en el timer 1
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //animacion de entre las dos imagenes para que realize la visualizacion que las alas se mueven
             int CantidadMovimientos = 5;
             if (ContadorMovimientos <= CantidadMovimientos)
             {
@@ -50,7 +51,7 @@ namespace Game
             int ly = Player.Location.Y;
             int lx = Player.Location.X;
 
-            //Volar
+            //Volar y colision contra barrera y tubos
             if (VolarArriva)
             {
                 ly = ly - 15;
@@ -65,11 +66,19 @@ namespace Game
             if ((Player.Bounds.IntersectsWith(Barrera.Bounds)) || (Player.Bounds.IntersectsWith(TuboArriva.Bounds)) || (Player.Bounds.IntersectsWith(TuvoAbajo.Bounds)))
 
             {
-                IniciarJuego();
+                // retorno a form de game over
+                this.Close();
+                Form3 Finaldeljuego = new Form3();
+                Finaldeljuego.Show();
+                
+
             }
             Puntaje.Location = new Point(Player.Location.X + 30, Player.Location.Y - 25);
             Puntaje.Text = (TuboArriva.Location.X == Player.Location.X) ? Convert.ToString((Convert.ToInt32(Puntaje.Text) + 1)).ToString() : Puntaje.Text;
+
+            
         }
+
 
         private void Player_Click(object sender, EventArgs e)
         {
@@ -97,7 +106,7 @@ namespace Game
         {
 
         }
-
+        // para precionar la tecla espacio y asienda el personaje
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == Convert.ToChar(Keys.Space))
@@ -105,7 +114,7 @@ namespace Game
                 VolarArriva = true;
             }
         }
-
+        // timer 3 movimiento de la barrera
         private void timer3_Tick(object sender, EventArgs e)
         {
             Barrera.Location = (Barrera.Location.X > -480) ? new Point((Barrera.Location.X) - 1, Barrera.Location.Y) : Barrera.Location = new Point(-9, Barrera.Location.Y);

@@ -46,7 +46,8 @@
             // 
             // Player
             // 
-            Player.BackgroundImage = Properties.Resources.bicho2r;
+            Player.BackColor = Color.Transparent;
+            Player.BackgroundImage = Properties.Resources.Bicho_1;
             Player.Location = new Point(19, 225);
             Player.Name = "Player";
             Player.Size = new Size(65, 52);
@@ -69,6 +70,7 @@
             // 
             // TuvoAbajo
             // 
+            TuvoAbajo.BackColor = Color.Transparent;
             TuvoAbajo.BackgroundImage = Properties.Resources.Tubo_de_abajo;
             TuvoAbajo.Image = (Image)resources.GetObject("TuvoAbajo.Image");
             TuvoAbajo.Location = new Point(134, 319);
@@ -109,6 +111,7 @@
             // 
             // TuboArriva
             // 
+            TuboArriva.BackColor = Color.Transparent;
             TuboArriva.BackgroundImage = Properties.Resources.Tubo_de_arriva;
             TuboArriva.Image = (Image)resources.GetObject("TuboArriva.Image");
             TuboArriva.Location = new Point(134, -173);
@@ -123,7 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.descarga__3;
+            BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(286, 447);
             Controls.Add(Barrera);
             Controls.Add(TuboArriva);

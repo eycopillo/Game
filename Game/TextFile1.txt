@@ -1,0 +1,30 @@
+﻿empezaremos con lo que es el juego en un windows form que sera nuestra pantalla de juego
+con unas caracteristicas de tamaño de 308 503 a esta pantalla le agregaremos un fondo en la 
+parte de propiedades backgroundimagen 
+en esta pamtalla pondremos 4 pictur box que llevaran las imagenes del ave una de tubo arriba y una de tubo abajo
+y la barrera inferior tambien aderimos 3 timer para aser la animacion 
+
+en el timer 1 veremos principalmente la animacion de volar 
+tendremos el codigo tambien para la colicion en caso de que choque con barrera o cualquier tubo este se
+redirija a la paguina de game over
+
+en el timer 2 veremos principalmente la pocision de los tubos tanto el de arriva como el de abajo
+con todo el parametro
+
+en el timer 3 veremos el movimiento de la barrera para este cada vez que se acabe vuelva a aparecer y este sea 
+visualmente continuo 
+
+adderimos un key press con la barra de espacio este para que el personaje asienda con la barra de espacio
+
+esto lo aremos en el form 1 que sera el que llevara el juego 
+
+en el form 2 tendremos lo que es el diceño de entrada que es donde correra primero uan ves que lo ejecutamos 
+en este for llemava un label para dar la bienvenida al juego y dos botones uno donde nos manda a que inicie el juego
+y el otro que nos dala salida 
+
+y en el form 3 tendremos algo igual donde tendremos un label indicando el termino del juego y 2 botones
+el primero que dice reinicio y nos manda al form 1 para reiniciar el juego o el 2 que saca del juego
+
+aqui no puse nada de codigo pero en las lineas de codigo biene comentado la funcion que realiza cada uno 
+
+Gracias 

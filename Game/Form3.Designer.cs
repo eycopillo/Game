@@ -1,6 +1,6 @@
 ﻿namespace Game
 {
-    partial class Form2
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -37,13 +37,13 @@
             // 
             button1.BackColor = Color.Transparent;
             button1.BackgroundImage = Properties.Resources.descarga__3;
-            button1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(81, 186);
+            button1.Location = new Point(76, 193);
             button1.Name = "button1";
-            button1.Size = new Size(134, 61);
-            button1.TabIndex = 0;
-            button1.Text = "Jugar";
+            button1.Size = new Size(141, 61);
+            button1.TabIndex = 1;
+            button1.Text = "Reintentar";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -51,12 +51,12 @@
             // 
             button2.BackColor = Color.Transparent;
             button2.BackgroundImage = Properties.Resources.descarga__3;
-            button2.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(81, 262);
+            button2.Location = new Point(76, 260);
             button2.Name = "button2";
-            button2.Size = new Size(134, 61);
-            button2.TabIndex = 1;
+            button2.Size = new Size(141, 61);
+            button2.TabIndex = 2;
             button2.Text = "Salir";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
@@ -67,13 +67,13 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Ink Free", 19.9999981F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(45, 37);
+            label1.Location = new Point(39, 50);
             label1.Name = "label1";
-            label1.Size = new Size(209, 49);
-            label1.TabIndex = 2;
-            label1.Text = "Flappybird";
+            label1.Size = new Size(215, 49);
+            label1.TabIndex = 3;
+            label1.Text = "Game over";
             // 
-            // Form2
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -82,9 +82,8 @@
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Form2";
-            Text = "Inicio";
-            Load += Form2_Load;
+            Name = "Form3";
+            Text = "Final";
             ResumeLayout(false);
             PerformLayout();
         }
